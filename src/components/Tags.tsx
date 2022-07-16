@@ -2,7 +2,7 @@ import React, { PropsWithChildren, ReactElement } from "react";
 
 const Tag = ({ children }: PropsWithChildren): ReactElement => {
   return (
-    <button className="py-1.5 px-2 bg-gray-500 rounded-md">{children}</button>
+    <button className="py-1.5 px-2 bg-zinc-600 rounded-md">{children}</button>
   );
 };
 

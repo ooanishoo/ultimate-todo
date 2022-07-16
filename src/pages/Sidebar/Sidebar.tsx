@@ -25,14 +25,14 @@ const SearchBar = () => (
       aria-label="search"
       role={"searchbox"}
       placeholder="Search"
-      className="w-full rounded-md py-2 pl-9 pr-3 bg-gray-600 placeholder-gray-400 text-xs focus:outline-none  focus:ring-1 focus:ring-sky-500 "
+      className="w-full rounded-md py-2 pl-9 pr-3 bg-neutral-600 placeholder-gray-400 text-xs focus:outline-none  focus:ring-1 focus:ring-sky-500 "
     />
   </label>
 );
 
 export const Sidebar = (): React.ReactElement => {
   return (
-    <div className="[&>*]:mb-4 bg-gray-700 text-white border-r border-black w-max box-border p-2 flex flex-col h-screen">
+    <div className="[&>*]:mb-4 bg-neutral-700 text-white border-r border-black w-max box-border p-2 flex flex-col h-screen">
       <SearchBar />
       <TodoCards />
       <TodoList />
