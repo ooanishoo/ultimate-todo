@@ -1,16 +1,16 @@
-import React, { ReactElement } from "react";
-import { TodoCard } from "./TodoCard";
+import React, { ReactElement } from 'react'
+import { TodoCard } from './TodoCard'
 import {
   BsInboxFill,
   BsCalendar3,
   BsCalendarDate,
   BsFlagFill,
-} from "react-icons/bs";
+} from 'react-icons/bs'
 
 export const TodoCards = (): ReactElement => {
   return (
     <div
-      className="flex flex-row flex-wrap w-72 [&>*]:flex-auto"
+      className="flex w-72 flex-row flex-wrap [&>*]:flex-auto"
       data-testid="todo-cards"
     >
       <TodoCard
@@ -42,5 +42,5 @@ export const TodoCards = (): ReactElement => {
         data-testid="todo-card"
       />
     </div>
-  );
-};
+  )
+}

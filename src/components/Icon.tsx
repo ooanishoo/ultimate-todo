@@ -6,7 +6,9 @@ interface IconProps {
 }
 const Icon = ({ iconType, className }: IconProps): ReactElement => {
   return (
-    <div className={`bg-blue-400 rounded-full w-6 h-6 flex justify-center items-center ${className}`}>
+    <div
+      className={`flex h-6 w-6 items-center justify-center rounded-full bg-blue-400 ${className}`}
+    >
       {iconType}
     </div>
   )

@@ -1,36 +1,19 @@
-import React from "react";
-import TodoItem from "./TodoItem";
+import React, { ReactElement } from 'react'
+import Todo from './Todo'
+import { ITodo } from './types'
 
-const todos = [
-  {
-    name: "Reminders",
-    count: 4,
-  },
-  {
-    name: "Shopping",
-    count: 24,
-  },
-  {
-    name: "Personal",
-    count: 34,
-  },
-  {
-    name: "Work",
-    count: 3,
-  },
-];
+interface ITodoListProps {
+  todos: ITodo[]
+}
 
-const TodoList = () => {
+const TodoList = ({ todos }: ITodoListProps): ReactElement => {
   return (
-    <>
-      <h2 className="text-xs p-2 font-bold text-gray-500">My Lists</h2>
-      <ul>
-        {todos.map(({ name, count }) => (
-          <TodoItem name={name} count={count} />
-        ))}
-      </ul>
-    </>
-  );
-};
+    <ul>
+      {todos.map((todo) => (
+        <Todo todo={todo} />
+      ))}
+    </ul>
+  )
+}
 
-export default TodoList;
+export default TodoList

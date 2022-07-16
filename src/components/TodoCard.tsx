@@ -1,9 +1,9 @@
-import { ReactElement } from "react";
+import { ReactElement } from 'react'
 
 interface ITodoCardProps {
-  icon: ReactElement;
-  todoCount: number;
-  text: string;
+  icon: ReactElement
+  todoCount: number
+  text: string
 }
 
 export const TodoCard = ({
@@ -11,13 +11,13 @@ export const TodoCard = ({
   todoCount,
   text,
 }: ITodoCardProps): ReactElement => (
-  <button className="w-32 h-14 bg-zinc-600 rounded-xl p-2 flex flex-col m-1 hover:bg-blue-400">
-    <div className="flex flex-row justify-between w-full mb">
-      <div className="bg-blue-400 rounded-full w-6 h-6 flex justify-center items-center">
+  <button className="m-1 flex h-14 w-32 flex-col rounded-xl bg-zinc-600 p-2 hover:bg-blue-400">
+    <div className="mb flex w-full flex-row justify-between">
+      <div className="flex h-6 w-6 items-center justify-center rounded-full bg-blue-400">
         {icon}
       </div>
       <span className="text-lg font-extrabold">{todoCount}</span>
     </div>
     <p className="text-xs font-semibold">{text}</p>
   </button>
-);
+)
