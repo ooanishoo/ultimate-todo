@@ -32,7 +32,7 @@ const SearchBar = () => (
 
 export const Sidebar = (): React.ReactElement => {
   return (
-    <nav className="fixed top-0 left-0 box-border flex h-full w-80 flex-col overflow-y-auto border-r border-black bg-neutral-700 p-2 text-white [&>*]:mb-4">
+    <nav className="fixed top-0 left-0 box-border flex h-full w-80 flex-col overflow-y-auto border-r border-black bg-neutral-800 p-2 text-white [&>*]:mb-4">
       <SearchBar />
       <TodoCards />
       <TodoCategories />
