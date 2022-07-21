@@ -1,4 +1,3 @@
-import React from 'react'
 import { Content, Sidebar } from './pages'
 
 export default function App() {

@@ -16,12 +16,15 @@ const TodoCategoryStatus = () => (
 )
 
 export const Content = (): React.ReactElement => {
+  const AddTodo = () => (
+    <div className="flex w-full flex-row-reverse">
+      <BsPlusLg role="button" className="text-zinc-600" />
+    </div>
+  )
   return (
-    <div className="ml-80 flex h-full w-full flex-col bg-zinc-800 text-white">
+    <div className="ml-72 flex h-full w-full flex-col bg-zinc-800 text-white">
       <header className="flex w-full flex-col justify-between  px-4 py-2">
-        <div className="flex w-full flex-row-reverse">
-          <BsPlusLg role="button" className="text-zinc-600" />
-        </div>
+        <AddTodo />
         <div className="mt-4 flex w-full justify-between">
           <h1 className="text-4xl font-bold ">Reminders</h1>
           <h4 className="text-3xl font-semibold">4</h4>
