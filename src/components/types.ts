@@ -5,3 +5,11 @@ export interface ITodo {
   notes?: string
   tags?: string[]
 }
+
+export interface ITodoList {
+  id: string
+  title: string
+  color: string
+  todos: ITodo[] | []
+  completedTodos: number
+}

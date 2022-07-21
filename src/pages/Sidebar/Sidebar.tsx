@@ -1,19 +1,11 @@
 import React from 'react'
+import { BsSearch } from 'react-icons/bs'
+import { AddListButton } from '../../components/AddListButton'
+import AddListModal from '../../components/AddListModal'
 import Tags from '../../components/Tags'
 import { TodoCards } from '../../components/TodoCards'
 import TodoCategories from '../../components/TodoCategories'
-import { BsPlusCircle, BsSearch } from 'react-icons/bs'
-
-const AddList = () => (
-  <div className="flex flex-auto flex-col-reverse bg-inherit ">
-    <button className="flex items-center">
-      <span className="mr-2 flex items-center justify-center">
-        <BsPlusCircle />
-      </span>
-      <span>Add List</span>
-    </button>
-  </div>
-)
+import { ITodoList } from '../../components/types'
 
 const SearchBar = () => (
   <label className="relative block">
@@ -31,13 +23,21 @@ const SearchBar = () => (
 )
 
 export const Sidebar = (): React.ReactElement => {
+  const [showDialog, setShowDialog] = React.useState(false)
+
   return (
-    <nav className="fixed top-0 left-0 box-border flex h-full w-80 flex-col overflow-y-auto border-r border-black bg-neutral-800 p-2 text-white [&>*]:mb-4">
+    <nav className="fixed top-0 left-0 box-border flex h-full w-72 flex-col gap-4 overflow-y-auto border-r border-black bg-neutral-800 p-2 text-white first:pt-11">
       <SearchBar />
       <TodoCards />
       <TodoCategories />
       <Tags />
-      <AddList />
+      {showDialog && (
+        <AddListModal
+          OnDismiss={() => setShowDialog(false)}
+          OnSubmit={(todoList: ITodoList) => alert(JSON.stringify(todoList))}
+        />
+      )}
+      <AddListButton onClick={() => setShowDialog(true)} />
     </nav>
   )
 }
