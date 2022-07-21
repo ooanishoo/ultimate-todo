@@ -10,7 +10,7 @@ const Tags = () => {
   return (
     <div className="p-2">
       <h2 className="p-2 text-xs font-bold text-gray-500">Tags</h2>
-      <div className="flex flex-wrap [&>*]:mr-2">
+      <div className="flex flex-wrap gap-2">
         <Tag>All tags</Tag>
         <Tag>#tailwindcss</Tag>
         <Tag>#gym</Tag>

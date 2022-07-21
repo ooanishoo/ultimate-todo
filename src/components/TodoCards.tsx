@@ -10,7 +10,7 @@ import {
 export const TodoCards = (): ReactElement => {
   return (
     <div
-      className="flex w-72 flex-row flex-wrap [&>*]:flex-auto"
+      className=" flex flex-row flex-wrap justify-between gap-3"
       data-testid="todo-cards"
     >
       <TodoCard
