@@ -5,7 +5,7 @@ import AddListModal from '../../components/AddListModal'
 import Tags from '../../components/Tags'
 import { TodoCards } from '../../components/TodoCards'
 import TodoCategories from '../../components/TodoCategories'
-import { ITodoList } from '../../components/types'
+import { ITodoCategory } from '../../components/types'
 
 const SearchBar = () => (
   <label className="relative block">
@@ -34,7 +34,9 @@ export const Sidebar = (): React.ReactElement => {
       {showDialog && (
         <AddListModal
           OnDismiss={() => setShowDialog(false)}
-          OnSubmit={(todoList: ITodoList) => alert(JSON.stringify(todoList))}
+          OnSubmit={(todoList: ITodoCategory) =>
+            alert(JSON.stringify(todoList))
+          }
         />
       )}
       <AddListButton onClick={() => setShowDialog(true)} />

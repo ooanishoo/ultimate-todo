@@ -2,11 +2,11 @@ import React, { ReactElement } from 'react'
 import Todo from './Todo'
 import { ITodo } from './types'
 
-interface ITodoListProps {
+interface ITodoCategoryProps {
   todos: ITodo[]
 }
 
-const TodoList = ({ todos }: ITodoListProps): ReactElement => {
+const TodoList = ({ todos }: ITodoCategoryProps): ReactElement => {
   return (
     <ul>
       {todos.map((todo) => (

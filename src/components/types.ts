@@ -6,7 +6,7 @@ export interface ITodo {
   tags?: string[]
 }
 
-export interface ITodoList {
+export interface ITodoCategory {
   id: string
   title: string
   color: string

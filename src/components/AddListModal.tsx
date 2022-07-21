@@ -1,18 +1,18 @@
 import Dialog from '@reach/dialog'
 import React from 'react'
 import '@reach/dialog/styles.css'
-import { ITodoList } from './types'
+import { ITodoCategory } from './types'
 
 interface IAddListProps {
   OnDismiss: (event: boolean) => void
-  OnSubmit: (todoList: ITodoList) => void
+  OnSubmit: (todoList: ITodoCategory) => void
 }
 
 const AddListModal = ({ OnDismiss, OnSubmit }: IAddListProps) => {
   const handleOnSubmit = (e: React.FormEvent) => {
     e.preventDefault()
 
-    const newList: ITodoList = {
+    const newList: ITodoCategory = {
       id: '1',
       title: 'Personal',
       color: '#FFD60A',
@@ -36,7 +36,7 @@ const AddListModal = ({ OnDismiss, OnSubmit }: IAddListProps) => {
           <input
             type="text"
             name="list-name"
-            className="flex-auto rounded-md bg-neutral-700 py-2 pl-9 pr-3  text-xs placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-sky-500 "
+            className="flex-auto rounded-md bg-neutral-700 p-2  text-xs placeholder-gray-400 focus:outline-none focus:ring-1 focus:ring-sky-500 "
           />
         </div>
         <div className="flex items-center gap-4">
