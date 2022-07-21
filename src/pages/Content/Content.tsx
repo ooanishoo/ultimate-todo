@@ -15,6 +15,14 @@ const TodoCategoryStatus = () => (
   </div>
 )
 
+const allItemsCompleted = (
+  <div className="flex h-full items-center justify-center ">
+    <span className="flex-nowrap px-5 text-2xl font-semibold text-zinc-600">
+      All Items Completed
+    </span>
+  </div>
+)
+
 export const Content = (): React.ReactElement => {
   const AddTodo = () => (
     <div className="flex w-full flex-row-reverse">
@@ -22,7 +30,7 @@ export const Content = (): React.ReactElement => {
     </div>
   )
   return (
-    <div className="ml-72 flex h-full w-full flex-col bg-zinc-800 text-white">
+    <div className="ml-72 flex h-full w-full min-w-[350px] flex-col bg-zinc-800 text-white">
       <header className="flex w-full flex-col justify-between  px-4 py-2">
         <AddTodo />
         <div className="mt-4 flex w-full justify-between">
@@ -30,7 +38,7 @@ export const Content = (): React.ReactElement => {
           <h4 className="text-3xl font-semibold">4</h4>
         </div>
       </header>
-      <main className="overflow-y-auto p-4 text-xs">
+      <main className="flex-auto overflow-y-auto p-4 text-xs">
         <TodoCategoryStatus />
         <TodoList todos={mockTodos} />
       </main>
