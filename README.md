@@ -1,46 +1,40 @@
-# Getting Started with Create React App
+# Ultimate Todo
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![2023-08-07 at 6 13 pm](https://github.com/ooanishoo/ultimate-todo/assets/9260574/ea77839a-9be4-4bd2-a219-55debf034f15)
 
-## Available Scripts
+This project showcases a quick and raw mockup of 🍎 Apple's 📝 **Reminders** app using the popular [Tailwind CSS](https://tailwindcss.com/) framework. The primary goal of this repository is to demonstrate how rapidly a functional and visually appealing UI can be created by leveraging the power and flexibility of Tailwind CSS.
 
-In the project directory, you can run:
+## Introduction
 
-### `npm start`
+The **Ultimate Todo** is a static mockup designed for showcasing purposes. It's a simplified version of a reminder app and doesn't have any backend functionality. You can use it to:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Explore how Tailwind CSS can be used to quickly style and structure UI components.
+- Learn about basic HTML structure and how different HTML elements are used.
+- Experiment with responsive design by resizing your browser window.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Getting started
 
-### `npm test`
+1.  Clone the repository to your local machine:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+git clone https://github.com/ooanishoo/ultimate-todo.git
+```
 
-### `npm run build`
+2.  Navigate to the project directory:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+cd ultimate-todo
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3.  Install the required dependencies:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+npm install
+```
 
-### `npm run eject`
+## Run the development server:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Run the following command to start the development server:
+```
+npm start
+```
